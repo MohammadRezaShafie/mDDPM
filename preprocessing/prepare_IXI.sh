@@ -20,7 +20,7 @@ fi
 
 echo "Resample"
 mkdir -p $DATA_DIR/v1resampled/mri/t2
-python resample.py -i $INPUT_DIR/t2 -o $DATA_DIR/v1resampled/mri/t2 -r 1.0 1.0 1.0 
+python resample.py -i $INPUT_DIR -o $DATA_DIR/v1resampled/mri/t2 -r 1.0 1.0 1.0 
 # rename files for standard naming
 for file in $DATA_DIR/v1resampled/mri/t2/*
 do
